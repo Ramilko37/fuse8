@@ -1,0 +1,59 @@
+.card {
+  width: 379px;
+  height: 381px;
+  background: #F8F8F8;
+  border: 1px solid #D8D8D8;
+  box-sizing: border-box;
+
+    &__image {
+      size: auto;
+    }
+
+    &__description-container {
+      display: flex;
+      flex-direction: column;
+      background-color: #F8F8F8;
+      border: 1px solid red;
+      padding: 0 0  17px 20px;
+      box-sizing: border-box;
+      height: 154px;
+    }
+
+    &__title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 27px;
+      color: #363636;
+      margin: 0;
+    }
+
+    &__text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: #363636;
+      margin: 0;
+
+      &_price {
+        font-weight: 700;
+      }
+    }
+
+    &__price {
+      font-weight: 700;
+    }
+
+    &__disclaimer {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      margin: 7px 0 0 0;
+    }
+
+  &__description-wrapper {
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,29 @@
+.button {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #D8D8D8;
+  border-radius: 25px;
+  margin: 60px auto 70px;
+  box-sizing: border-box;
+  background-color: transparent;
+
+
+  &__content {
+   display: flex;
+  }
+
+  &__label {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: #363636;
+    margin-left: 32px;
+    margin-right: 10px;
+  }
+
+  &__image {
+    align-self: center;
+  }
+}
