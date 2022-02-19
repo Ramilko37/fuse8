@@ -1,11 +1,11 @@
 import React from 'react';
 import './index.scss';
 
-function Filter(props) {
+function Filter({onChange}) {
     return (
         <div className='filter'>
             <span className='filter__label'>Filter</span>
-            <input type='text' className='filter__input' />
+            <input onChange={onChange} type='text' className='filter__input'/>
         </div>
     );
 }

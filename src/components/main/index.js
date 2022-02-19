@@ -4,16 +4,16 @@ import Button from "../button";
 import Filter from "../filter ";
 import './index.scss';
 
-function Main({ items, count, onClick }) {
+function Main({items, count, onClick}) {
     return (
         <main className='main'>
             <h1 className='title'>Our Latest Developments</h1>
-            <Filter />
+            <Filter/>
             <Cards
                 items={items}
                 count={count}
             />
-            <Button onClick={onClick} />
+            <Button onClick={onClick}/>
         </main>
     );
 }

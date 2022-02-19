@@ -1,10 +1,9 @@
 import './global.css';
-import Card from "./components/card";
 import Button from "./components/button";
 import React from "react";
-import Filter from "./components/filter ";
 import './components/main/index.scss';
 import Cards from "./components/cards";
+import Filter from "./components/filter ";
 
 let url = 'https://603e38c548171b0017b2ecf7.mockapi.io/homes';
 
@@ -21,6 +20,7 @@ let screenSize;
 function App() {
     const [items, setItems] = React.useState([]);
     const [count, setCount] = React.useState(6);
+    const [filterValue, setFilterValue] = React.useState('');
 
     console.log(count);
 
@@ -35,26 +35,13 @@ function App() {
     }, []);
 
 
-
-
-
-    // function getCount(){
-    //     if (window.innerWidth >= DESKTOP_WIDTH) {
-    //         return screenSize = 6;
-    //     }
-    //     if (window.innerWidth >= TABLET_WIDTH) {
-    //         return screenSize = 1;
-    //     }
-    // }
-
-    // React.useEffect(() => {
-    //     window.addEventListener('resize', getCount);
-    //
-    //
-    //     return () => {
-    //         window.removeEventListener('resize', getCount);
-    //     };
-    // }, []);
+    function onChangeFilterInput(e) {
+        if (e.target.value.length > 2) {
+            setFilterValue(e.target.value);
+        }
+        console.log(e.target.value)
+        console.log(filterValue)
+    }
 
 
     function seeMoreHandler() {
@@ -63,27 +50,28 @@ function App() {
         ) {
             setCount(count + 3);
         }
-        else
-        {
-            console.log('Все')
-        }
-        console.log(count);
     }
 
 
-  return (
-      <>
-      <main className='main'>
-              <h1 className='title'>Our Latest Developments</h1>
-              <Filter />
-              <Cards
-                  items={items}
-                  count={count}
-              />
-              <Button onClick={seeMoreHandler} />
-      </main>
-      </>
-  );
+    return (
+        <>
+            <main className='main'>
+                <h1 className='title'>Our Latest Developments</h1>
+                <Filter
+                    onChange={onChangeFilterInput}
+                    value={filterValue}
+                />
+
+                    <Cards
+                        items={items}
+                        count={count}
+                        filterValue={filterValue}
+                    />
+
+                <Button onClick={seeMoreHandler}/>
+            </main>
+        </>
+    );
 }
 
 export default App;

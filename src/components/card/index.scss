@@ -5,53 +5,81 @@
   border: 1px solid #D8D8D8;
   box-sizing: border-box;
 
-    &__image {
-      size: auto;
+  &__image-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__image {
+    size: auto;
+  }
+
+  &__type {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    height: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    vertical-align: middle;
+    color: #FFFFFF;
+    padding: 8px 10px 5px;
+    box-sizing: border-box;
+
+    &_independent {
+      background-color: #006F79;
     }
 
-    &__description-container {
-      display: flex;
-      flex-direction: column;
-      background-color: #F8F8F8;
-      border: 1px solid red;
-      padding: 0 0  17px 20px;
-      box-sizing: border-box;
-      height: 154px;
+    &_support {
+      background-color: #EC6608;
     }
+  }
 
-    &__title {
-      font-style: normal;
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 27px;
-      color: #363636;
-      margin: 0;
-    }
+  &__description-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F8F8;
+    padding: 0 0 17px 20px;
+    box-sizing: border-box;
+  }
 
-    &__text {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 22px;
-      color: #363636;
-      margin: 0;
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #363636;
+    margin: 0;
+  }
 
-      &_price {
-        font-weight: 700;
-      }
-    }
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #363636;
+    margin: 0;
 
-    &__price {
+    &_price {
       font-weight: 700;
     }
+  }
 
-    &__disclaimer {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 19px;
-      margin: 7px 0 0 0;
-    }
+  &__price {
+    font-weight: 700;
+  }
+
+  &__disclaimer {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 7px 0 0 0;
+  }
 
   &__description-wrapper {
     margin-top: 15px;

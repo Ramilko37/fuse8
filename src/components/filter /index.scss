@@ -31,6 +31,12 @@
 @media screen and (max-width: 1024px) {
   .filter {
     margin: 0 auto 45px;
+    justify-content: space-around;
+
+    &__input {
+
+      width: 300px;
+    }
   }
 
 }
