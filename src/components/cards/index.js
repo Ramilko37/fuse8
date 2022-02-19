@@ -2,7 +2,7 @@ import React from 'react';
 import Card from "../card";
 import './index.scss';
 
-function Cards({items, count, filterValue}) {
+function Cards({items, count, filterValue, filterResult}) {
 
     console.log(filterValue)
     return (
@@ -10,7 +10,7 @@ function Cards({items, count, filterValue}) {
             {
 
 
-                    items
+                    filterResult
                         .map((item, key) => (
                             item.id <= count &&
                             <Card
