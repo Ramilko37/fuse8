@@ -5,6 +5,10 @@
   border: 1px solid #D8D8D8;
   box-sizing: border-box;
 
+  &__link {
+    text-decoration: none;
+  }
+
   &__image-container {
     display: flex;
     flex-direction: column;
@@ -63,10 +67,6 @@
     line-height: 22px;
     color: #363636;
     margin: 0;
-
-    &_price {
-      font-weight: 700;
-    }
   }
 
   &__price {
@@ -79,9 +79,24 @@
     font-size: 14px;
     line-height: 19px;
     margin: 7px 0 0 0;
+    color: #363636;
   }
 
   &__description-wrapper {
     margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+    width: 300px;
+
+    &__description-container {
+      display: flex;
+      flex-direction: column;
+      background-color: #F8F8F8;
+      padding: 0 20px 17px 20px;
+      box-sizing: border-box;
+    }
   }
 }
