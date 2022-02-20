@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/fuse8/static/css/main.b8cfb214.css",
+    "main.js": "/fuse8/static/js/main.75b176a8.js",
+    "static/js/787.d4898e08.chunk.js": "/fuse8/static/js/787.d4898e08.chunk.js",
+    "static/media/image.png": "/fuse8/static/media/image.87c7529b87f8c5e43449.png",
+    "index.html": "/fuse8/index.html",
+    "main.b8cfb214.css.map": "/fuse8/static/css/main.b8cfb214.css.map",
+    "main.75b176a8.js.map": "/fuse8/static/js/main.75b176a8.js.map",
+    "787.d4898e08.chunk.js.map": "/fuse8/static/js/787.d4898e08.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8cfb214.css",
+    "static/js/main.75b176a8.js"
+  ]
+}
