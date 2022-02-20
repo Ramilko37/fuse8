@@ -2,7 +2,7 @@ Test task for Fuse8 Agency
 
 Application developed using react-create-app.
 
-Fucntionality of this app allows you to observe cards which proceed you with information on various types of accomodation wherever.
+Functionality of this app allows you to observe cards which proceed you with information on various types of accomodation wherever.
 
 Please use Filter input to search through the cards and find the definite type of accomodation.
 
